@@ -36,4 +36,4 @@ make run-hex
 ## 替换 nask 的 RESB 为 nasm 下的指令
 - RESB
 
-    `RESB 16`替换成`TIMES	4600	DB	0`
+    `RESB 4600`替换成`TIMES	4600	DB	0`
