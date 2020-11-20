@@ -6,13 +6,13 @@ build:
 run: build
 	qemu-system-i386 hellos.img
 
-.PHONY: build-hex
-build-hex:
-	nasm -f bin hellos-hex.asm -o hellos-hex.img
+.PHONY: build-ipl
+build-ipl:
+	nasm -f bin ipl.asm -o ipl.img
 
-.PHONY: run-hex
-run-hex: build-hex
-	qemu-system-i386 hellos-hex.img
+.PHONY: run-ipl
+run-ipl: build-ipl
+	qemu-system-i386 ipl.img
 
 .PHONY: clean
 clean:
