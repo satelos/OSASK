@@ -2,13 +2,13 @@
 build:
 	nasm -f bin hellos.asm -o hellos.img
 
-.PHONY: build-hex
-build-hex:
-	nasm -f bin hellos-hex.asm -o hellos-hex.img
-
 .PHONY: run
 run: build
 	qemu-system-i386 hellos.img
+
+.PHONY: build-hex
+build-hex:
+	nasm -f bin hellos-hex.asm -o hellos-hex.img
 
 .PHONY: run-hex
 run-hex: build-hex
@@ -16,5 +16,4 @@ run-hex: build-hex
 
 .PHONY: clean
 clean:
-	rm -f hellos.img
-	rm -f hellos-hex.img
+	rm -f *.img
