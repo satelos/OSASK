@@ -12,8 +12,7 @@
 ```
 ├── LICENSE
 ├── README.md
-├── doc
-│   └── note        // 关于本书的学习笔记
+├── note            // 关于本书的学习笔记
 └── source
     └── OSASK.zip   // 这是书籍的光盘(源码)
 ```
